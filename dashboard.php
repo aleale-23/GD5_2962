@@ -60,10 +60,13 @@ foreach ($_SESSION["daftarItem"] as $item) {
             switch ($item["status"]) {
               case "Lunas":
                 echo '<span class="badge badge-lunas">Lunas</span>';
+                break;
               case "DP":
                 echo '<span class="badge badge-dp">DP</span>';
+                break;
               case "Belum Bayar":
                 echo '<span class="badge badge-belum">Belum Bayar</span>';
+                break;
             }
           ?>
 
