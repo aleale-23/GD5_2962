@@ -55,7 +55,7 @@ if (!isset($_SESSION["host"])) {
       </p>
       <p>
         <label>Bukti Struk (opsional):</label><br>
-        <input type="file" name="buktiStruk" accept=".jpg,.jpeg,.png">
+        <input type="file" name="bukti" accept=".jpg,.jpeg,.png">
       </p>
       <button type="submit">Simpan Item</button>
     </form>
