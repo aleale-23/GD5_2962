@@ -50,7 +50,9 @@ foreach ($_SESSION["daftarItem"] as $item) {
           <p>Jumlah Orang: <?php echo $item["jumlahOrang"]; ?></p>
 
           <?php
-            $hargaPerOrang = $item["harga"] * $item["jumlahOrang"];
+            $hargaPerOrang = $item["jumlahOrang"] > 0
+              ? $item["harga"] / $item["jumlahOrang"]
+              : 0;
           ?>
           <p>Per Orang: Rp<?php echo number_format($hargaPerOrang, 0, ",", "."); ?></p>
 
